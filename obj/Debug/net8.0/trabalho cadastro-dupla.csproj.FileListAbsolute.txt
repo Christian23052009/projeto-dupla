@@ -1,0 +1,36 @@
+C:\Users\445660624\Documents\trabalho cadastro-dupla\obj\Debug\net8.0\trabalho cadastro-dupla.csproj.AssemblyReference.cache
+C:\Users\445660624\Documents\trabalho cadastro-dupla\obj\Debug\net8.0\trabalho cadastro-dupla.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\445660624\Documents\trabalho cadastro-dupla\obj\Debug\net8.0\trabalho cadastro-dupla.AssemblyInfoInputs.cache
+C:\Users\445660624\Documents\trabalho cadastro-dupla\obj\Debug\net8.0\trabalho cadastro-dupla.AssemblyInfo.cs
+C:\Users\445660624\Documents\trabalho cadastro-dupla\obj\Debug\net8.0\trabalho cadastro-dupla.csproj.CoreCompileInputs.cache
+C:\Users\445660624\Documents\trabalho cadastro-dupla\obj\Debug\net8.0\trabalho cadastro-dupla.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\445660624\Documents\trabalho cadastro-dupla\obj\Debug\net8.0\trabalho cadastro-dupla.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\445660624\Documents\trabalho cadastro-dupla\obj\Debug\net8.0\trabalho cadastro-dupla.sourcelink.json
+C:\Users\445660624\Documents\trabalho cadastro-dupla\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\445660624\Documents\trabalho cadastro-dupla\bin\Debug\net8.0\appsettings.json
+C:\Users\445660624\Documents\trabalho cadastro-dupla\bin\Debug\net8.0\trabalho cadastro-dupla.exe
+C:\Users\445660624\Documents\trabalho cadastro-dupla\bin\Debug\net8.0\trabalho cadastro-dupla.deps.json
+C:\Users\445660624\Documents\trabalho cadastro-dupla\bin\Debug\net8.0\trabalho cadastro-dupla.runtimeconfig.json
+C:\Users\445660624\Documents\trabalho cadastro-dupla\bin\Debug\net8.0\trabalho cadastro-dupla.dll
+C:\Users\445660624\Documents\trabalho cadastro-dupla\bin\Debug\net8.0\trabalho cadastro-dupla.pdb
+C:\Users\445660624\Documents\trabalho cadastro-dupla\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\445660624\Documents\trabalho cadastro-dupla\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\445660624\Documents\trabalho cadastro-dupla\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\445660624\Documents\trabalho cadastro-dupla\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\445660624\Documents\trabalho cadastro-dupla\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\445660624\Documents\trabalho cadastro-dupla\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\445660624\Documents\trabalho cadastro-dupla\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\445660624\Documents\trabalho cadastro-dupla\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\445660624\Documents\trabalho cadastro-dupla\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\445660624\Documents\trabalho cadastro-dupla\obj\Debug\net8.0\staticwebassets\msbuild.trabalho cadastro-dupla.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\445660624\Documents\trabalho cadastro-dupla\obj\Debug\net8.0\staticwebassets\msbuild.build.trabalho cadastro-dupla.props
+C:\Users\445660624\Documents\trabalho cadastro-dupla\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.trabalho cadastro-dupla.props
+C:\Users\445660624\Documents\trabalho cadastro-dupla\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.trabalho cadastro-dupla.props
+C:\Users\445660624\Documents\trabalho cadastro-dupla\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\445660624\Documents\trabalho cadastro-dupla\obj\Debug\net8.0\scopedcss\bundle\trabalho cadastro-dupla.styles.css
+C:\Users\445660624\Documents\trabalho cadastro-dupla\obj\Debug\net8.0\trabalho.DB7CD70F.Up2Date
+C:\Users\445660624\Documents\trabalho cadastro-dupla\obj\Debug\net8.0\trabalho cadastro-dupla.dll
+C:\Users\445660624\Documents\trabalho cadastro-dupla\obj\Debug\net8.0\refint\trabalho cadastro-dupla.dll
+C:\Users\445660624\Documents\trabalho cadastro-dupla\obj\Debug\net8.0\trabalho cadastro-dupla.pdb
+C:\Users\445660624\Documents\trabalho cadastro-dupla\obj\Debug\net8.0\trabalho cadastro-dupla.genruntimeconfig.cache
+C:\Users\445660624\Documents\trabalho cadastro-dupla\obj\Debug\net8.0\ref\trabalho cadastro-dupla.dll

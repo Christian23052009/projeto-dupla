@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\trabalho cadastro-dupla.props" />
+</Project>
