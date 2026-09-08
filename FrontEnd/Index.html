@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>📋 Gestão de Chamados - Suporte Técnico</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📋</text></svg>"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <!-- ============================================================ -->
+      <!-- HEADER                                                        -->
+      <!-- ============================================================ -->
+      <header>
+        <div class="header-content">
+          <div class="header-left">
+            <h1>📋 Gestão de Chamados</h1>
+            <p>Suporte Técnico • <span id="totalChamados">0</span> chamados</p>
+          </div>
+          <div class="header-right">
+            <button id="btnAbrirModal" class="btn btn-primary btn-lg">
+              ➕ Novo Chamado
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <!-- ============================================================ -->
+      <!-- MAIN                                                          -->
+      <!-- ============================================================ -->
+      <main>
+        <!-- ====== FILTROS ====== -->
+        <section class="filtros-section">
+          <div class="filtros-container">
+            <div class="filtro-group">
+              <label for="filtroStatus">📊 Status</label>
+              <select id="filtroStatus" class="form-control">
+                <option value="">Todos</option>
+                <option value="Pendente">⏳ Pendente</option>
+                <option value="EmAndamento">🔄 Em Andamento</option>
+                <option value="Resolvido">✅ Resolvido</option>
+              </select>
+            </div>
+            <div class="filtro-group">
+              <label for="filtroBusca">🔎 Buscar</label>
+              <input
+                type="text"
+                id="filtroBusca"
+                class="form-control"
+                placeholder="Digite para buscar..."
+              />
+            </div>
+            <button id="btnLimparFiltros" class="btn btn-secondary">
+              🗑️ Limpar
+            </button>
+          </div>
+        </section>
+
+        <!-- ====== LOADING ====== -->
+        <div id="loading" class="loading hidden">
+          <div class="spinner"></div>
+          <p>Carregando chamados...</p>
+        </div>
+
+        <!-- ====== LISTA DE CHAMADOS ====== -->
+        <section id="lista-section">
+          <div id="listaChamados" class="lista-chamados">
+            <!-- Renderizado via JavaScript -->
+          </div>
+        </section>
+      </main>
+
+      <!-- ============================================================ -->
+      <!-- FOOTER                                                        -->
+      <!-- ============================================================ -->
+      <footer>
+        <p>© 2024 - Gestão de Chamados • Desenvolvido com 💙</p>
+      </footer>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- MODAL: CRIAR CHAMADO                                          -->
+    <!-- ============================================================ -->
+    <div id="modalCriar" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>📝 Criar Novo Chamado</h2>
+          <button class="modal-close" id="btnFecharModalCriar">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form id="formChamado" novalidate>
+            <!-- Título -->
+            <div class="form-group">
+              <label for="titulo">Título *</label>
+              <input
+                type="text"
+                id="titulo"
+                class="form-control"
+                placeholder="Digite o título (mínimo 5 caracteres)"
+                required
+                minlength="5"
+              />
+              <small class="form-error" id="erroTitulo"></small>
+            </div>
+
+            <!-- Descrição -->
+            <div class="form-group">
+              <label for="descricao">Descrição *</label>
+              <textarea
+                id="descricao"
+                class="form-control"
+                rows="4"
+                placeholder="Descreva detalhadamente o problema..."
+                required
+              ></textarea>
+              <small class="form-error" id="erroDescricao"></small>
+            </div>
+
+            <!-- Categoria e Prioridade -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="categoria">Categoria *</label>
+                <select id="categoria" class="form-control" required>
+                  <option value="">Selecione...</option>
+                  <option value="Hardware">🖥️ Hardware</option>
+                  <option value="Software">💻 Software</option>
+                  <option value="Rede">🌐 Rede</option>
+                  <option value="Email">📧 Email</option>
+                  <option value="Sistema">⚙️ Sistema</option>
+                  <option value="Outro">📦 Outro</option>
+                </select>
+                <small class="form-error" id="erroCategoria"></small>
+              </div>
+              <div class="form-group">
+                <label for="prioridade">Prioridade</label>
+                <select id="prioridade" class="form-control">
+                  <option value="Baixa">🟢 Baixa</option>
+                  <option value="Média" selected>🟡 Média</option>
+                  <option value="Alta">🔴 Alta</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Botões -->
+            <div class="form-actions">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                id="btnCancelarCriar"
+              >
+                Cancelar
+              </button>
+              <button
+                type="submit"
+                class="btn btn-primary"
+                id="btnCriarChamado"
+              >
+                ✅ Criar Chamado
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- MODAL: CONFIRMAR EXCLUSÃO                                     -->
+    <!-- ============================================================ -->
+    <div id="modalExcluir" class="modal">
+      <div class="modal-content modal-excluir">
+        <div class="modal-header">
+          <h2>⚠️ Confirmar Exclusão</h2>
+          <button class="modal-close" id="btnFecharModalExcluir">
+            &times;
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="excluir-icon">🗑️</div>
+          <p>
+            Tem certeza que deseja excluir o chamado
+            <strong id="excluirTitulo"></strong>?
+          </p>
+          <p class="text-danger">Esta ação não pode ser desfeita!</p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" id="btnCancelarExcluir">
+            Cancelar
+          </button>
+          <button class="btn btn-danger" id="btnConfirmarExcluir">
+            Sim, excluir
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- TOAST CONTAINER                                              -->
+    <!-- ============================================================ -->
+    <div id="toastContainer"></div>
+
+    <!-- ============================================================ -->
+    <!-- SCRIPTS                                                      -->
+    <!-- ============================================================ -->
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>

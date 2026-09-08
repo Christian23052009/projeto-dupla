@@ -1,0 +1,52 @@
+📦 GestaoChamados/
+│
+├── 📄 README.md
+├── 📄 .gitignore
+├── 📄 LICENSE
+│
+├── 📂 src/
+│   │
+│   ├── 📂 backend/                                    # ✅ API .NET 8.0
+│   │   ├── 📄 Program.cs
+│   │   ├── 📄 appsettings.json
+│   │   ├── 📄 appsettings.Development.json
+│   │   ├── 📄 GestaoChamados.API.csproj
+│   │   │
+│   │   ├── 📂 Controllers/
+│   │   │   └── 📄 ChamadosController.cs
+│   │   │
+│   │   ├── 📂 Models/
+│   │   │   ├── 📄 Chamado.cs
+│   │   │   └── 📄 StatusChamado.cs
+│   │   │
+│   │   ├── 📂 DTOs/
+│   │   │   ├── 📄 CriarChamadoDTO.cs
+│   │   │   ├── 📄 ChamadoResponseDTO.cs
+│   │   │   └── 📄 AtualizarStatusDTO.cs
+│   │   │
+│   │   ├── 📂 Data/
+│   │   │   ├── 📄 ApplicationDbContext.cs
+│   │   │   └── 📄 DbInitializer.cs
+│   │   │
+│   │   └── 📂 Services/
+│   │       ├── 📄 IChamadoService.cs
+│   │       └── 📄 ChamadoService.cs
+│   │
+│   └── 📂 frontend/                                   # ✅ Vanilla JS SPA
+│       ├── 📄 index.html
+│       │
+│       ├── 📂 css/
+│       │   └── 📄 style.css
+│       │
+│       ├── 📂 js/
+│       │   ├── 📄 app.js
+│       │   ├── 📄 api.js
+│       │   └── 📄 ui.js
+│       │
+│       └── 📂 assets/
+│           ├── 📂 icons/
+│           └── 📂 images/
+│
+└── 📂 docs/
+    ├── 📄 requisitos.md
+    └── 📄 guia-usuario.md
